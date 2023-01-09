@@ -1,0 +1,23 @@
+@mixin type($variantType, $variantValue) {
+  &-#{$variantType}-#{$variantValue} {
+    @content;
+  }
+}
+
+@mixin variant($typeValue) {
+  @include type('variant', $typeValue) {
+    @content;
+  }
+}
+
+@mixin size($typeValue) {
+  @include type('size', $typeValue) {
+    @content;
+  }
+}
+
+@mixin shape($typeValue) {
+  @include type('shape', $typeValue) {
+    @content;
+  }
+}

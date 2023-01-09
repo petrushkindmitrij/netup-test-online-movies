@@ -1,0 +1,16 @@
+/* @import 'mixins/fonts';
+@import 'mixins/media-queries';
+@import 'mixins/styles';
+@import 'mixins/variants';
+
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'variables/styles'; */
+
+@import 'fonts';
+@import 'globals';
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}

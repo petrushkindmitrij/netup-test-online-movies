@@ -1,0 +1,85 @@
+@use '@styles/mixins/fonts';
+@use '@styles/mixins/media-queries';
+@use '@styles/mixins/styles';
+@use '@styles/variables/colors';
+@use '@styles/variables/constants';
+
+.searchPage {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 900px;
+  height: 100vh;
+
+  & > * {
+    z-index: 3;
+    position: relative;
+  }
+}
+
+.backgroundImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    background: rgba(35, 35, 35, 0.5);
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  object-fit: cover;
+
+  filter: grayscale(20%);
+
+  &--appear {
+    animation: fade 1s linear;
+  }
+  &--disappear {
+    animation: fade 1s linear reverse;
+  }
+}
+
+.sectionSearch {
+  padding-top: 56px;
+  // max-width: calc(1920px - (2 * 56px));
+}
+
+.sectionShowList {
+  // max-width: calc(1920px - (2 * 56px));
+  // padding-left: 56px;
+
+  margin-top: 0;
+  &--hidden {
+    margin-top: 1500px;
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

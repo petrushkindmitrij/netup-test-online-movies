@@ -1,0 +1,6 @@
+@function line-segment-equation-y($x1, $x2, $y1, $y2, $x) {
+  $y-line: calc(($x - 1px * $x1) * ($y2 - $y1) / ($x2 - $x1) + 1px * $y1);
+  $y-line-segment: clamp(1px * $y1, $y-line, 1px * $y2);
+
+  @return $y-line-segment
+};

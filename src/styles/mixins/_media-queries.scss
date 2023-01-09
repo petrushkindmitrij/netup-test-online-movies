@@ -1,0 +1,18 @@
+$mobile-width: 429px;
+$tablet-width: 840px;
+// $desktop-width: 1024px;
+
+
+@mixin for-size($size) {
+  @if $size == mobile {
+    @media (max-width: #{$mobile-width}) { @content; }
+  } @else if $size == mobile-and-tablet {
+    @media (max-width: #{$tablet-width}) { @content; }
+  } @else if $size == tablet {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) { @content; }
+  } @else if $size == tablet-and-desktop {
+    @media (min-width: #{$mobile-width}) { @content; }
+  } @else if $size == desktop {
+    @media (min-width: #{$tablet-width}) { @content; }
+  }
+}

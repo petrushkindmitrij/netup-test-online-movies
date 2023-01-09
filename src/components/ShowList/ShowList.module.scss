@@ -1,0 +1,57 @@
+@use '@styles/mixins/fonts';
+@use '@styles/mixins/media-queries';
+@use '@styles/mixins/styles';
+@use '@styles/variables/colors';
+@use '@styles/variables/constants';
+
+.logoContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  // overflow: hidden;
+}
+
+.title {
+  @include fonts.font-ubuntu;
+  @include fonts.h2;
+  text-align: center;
+
+  color: #ffffff;
+
+  margin: 56px auto;
+
+  &--searchMode {
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+}
+
+.cardList {
+  display: flex;
+
+  overflow: scroll;
+  // overflow-y: scroll;
+  margin: 0 -48px;
+  padding: 0 56px;
+  gap: 16px;
+
+  /* ----- hide scroll bar ------- */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  /* ---------------------------  */
+}
+
+.cardItem {
+  flex: 0 0 368px;
+}
+
+.informationLabel {
+  font-size: 20px;
+  text-align: center;
+  
+  color: #fff;
+}

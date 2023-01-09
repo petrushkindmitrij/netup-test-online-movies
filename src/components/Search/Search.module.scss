@@ -1,0 +1,86 @@
+@use '@styles/mixins/fonts';
+@use '@styles/mixins/styles';
+@use '@styles/variables/colors';
+
+.container {
+  display: flex;
+
+  width: 1127px;
+
+  transition: all 0.4s ease;
+
+  &::placeholder {
+    & .input {
+      color: colors.$text-dark-tertiary;
+
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.inputContainer {
+  position: relative;
+  flex: 0 1 100%;
+}
+
+.input {
+  @include fonts.font-ssp;
+  @include fonts.body-2;
+  text-overflow: ellipsis;
+
+  color: #6f6f6f;
+  background: rgba(255, 255, 255, 0.1);
+
+  outline: none;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px 0px 1px 1px;
+  border-radius: 4px 0px 0px 4px;
+  padding: 15.5px 24px;
+  width: 100%;
+
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ffffff;
+    // color: #232323;
+    color: #6f6f6f;
+    outline: none;
+  }
+}
+
+.resetSearchButton {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+
+  cursor: pointer;
+}
+
+.button {
+  @include styles.reset-button;
+
+  @include fonts.font-ssp;
+  @include fonts.body-l-bold;
+  font-weight: bold;
+  cursor: pointer;
+
+  flex: 0 0 151px;
+  // width: 48px;
+
+  color: #abffce;
+  background: #09bb53;
+
+  border-radius: 0 8px 8px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  /* .icon {
+
+  } */
+  // }
+}
