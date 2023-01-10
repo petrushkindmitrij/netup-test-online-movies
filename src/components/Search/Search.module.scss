@@ -41,8 +41,7 @@
 
   transition: background-color 0.2s ease;
 
-  &:hover,
-  &:focus-visible {
+  &:is(:hover, :focus-visible, :has(+ .resetSearchButton:hover)) {
     background-color: #ffffff;
     // color: #232323;
     color: #6f6f6f;
