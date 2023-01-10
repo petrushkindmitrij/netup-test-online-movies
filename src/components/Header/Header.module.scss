@@ -1,11 +1,9 @@
-@use '@styles/mixins/fonts';
-@use '@styles/mixins/media-queries';
-@use '@styles/mixins/styles';
+
 @use '@styles/variables/colors';
 @use '@styles/variables/constants';
 
 .header {
-  background: rgba(255, 255, 255, 0.1);
+  background: colors.$background-gray-transparent;
   backdrop-filter: blur(12.5px);
 
   position: fixed;

@@ -1,7 +1,4 @@
 @use '@styles/mixins/fonts';
-@use '@styles/mixins/variants';
-@use '@styles/mixins/styles';
-@use '@styles/mixins/media-queries';
 @use '@styles/variables/colors';
 
 .wrapper {
@@ -86,7 +83,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(35, 35, 35, 0.5);
+      background: colors.$background-light-gray-transparent;
     }
   }
 
@@ -94,7 +91,7 @@
     @include fonts.font-ssp;
     @include fonts.h4;
 
-    color: #ffffff;
+    color: colors.$text-white;
 
     margin: 0;
     margin-top: 16px;
@@ -104,7 +101,7 @@
     @include fonts.font-ssp;
     @include fonts.body-2;
 
-    color: #a6a6a6;
+    color: colors.$text-light-dark;
 
     margin: 0;
     margin-top: 4px;
@@ -112,7 +109,7 @@
   .cardGenres {
     @include fonts.body-2;
 
-    color: #ffffff;
+    color: colors.$text-white;
 
     margin-top: 4px;
   }

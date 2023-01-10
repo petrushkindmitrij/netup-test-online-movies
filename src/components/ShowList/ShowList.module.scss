@@ -16,7 +16,7 @@
   @include fonts.h2;
   text-align: center;
 
-  color: #ffffff;
+  color: colors.$text-white;
 
   margin: 56px auto;
 
@@ -52,6 +52,6 @@
 .informationLabel {
   font-size: 20px;
   text-align: center;
-  
-  color: #fff;
+
+  color: colors.$text-white;
 }

@@ -1,29 +1,17 @@
 // backgrounds
-$background-primary: #f7f7f7;
-$background-secondary: #fff;
-$background-tertiary: #eff3f6;
-$background-bage: rgba(3, 8, 13, 0.7);
-$background-overlay: rgba(3, 8, 13, 0.5);
-$background-ad: #fcddec;
+$background-white: #fff;
+$background-gray-transparent: rgba(255, 255, 255, 0.1);
+$background-light-gray-transparent: rgba(35, 35, 35, 0.5);
 
 // text/icons
-$text-light-primary: #fff;
-$text-light-secondary: rgba(255, 255, 255, 0.8);
+$text-white: #fff;
+$text-dark: #6f6f6f;
+$text-light-dark: #a6a6a6;
 
-$text-dark-primary: #15060d;
-$text-dark-secondary: #5a6c7d;
-$text-dark-tertiary: #96a3ae;
-
-// accent/action
-$accent-primary: #4963ee;
-$accent-secondary: #f2539f;
-
-$action-primary: #3e53c5;
-$action-secondary: #15b471;
-
-// effects
-$shadow-light: rgba(33, 33, 33, 0.08);
+// border
+$border-white: #fff;
 
 // other
-$separator: rgba(0, 26, 52, 0.08);
-$dark-bg: #39404a;
+$green-0: #abffce;
+$green-500: #09bb53;
+$orange: #de8b0f;

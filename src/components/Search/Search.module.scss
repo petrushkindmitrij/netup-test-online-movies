@@ -11,7 +11,7 @@
 
   &::placeholder {
     & .input {
-      color: colors.$text-dark-tertiary;
+      color: colors.$text-dark;
 
       transition: all 0.2s ease;
     }
@@ -28,12 +28,12 @@
   @include fonts.body-2;
   text-overflow: ellipsis;
 
-  color: #6f6f6f;
-  background: rgba(255, 255, 255, 0.1);
+  color: colors.$text-dark;
+  background: colors.$background-gray-transparent;
 
   outline: none;
   border-style: solid;
-  border-color: #ffffff;
+  border-color: colors.$border-white;
   border-width: 1px 0px 1px 1px;
   border-radius: 4px 0px 0px 4px;
   padding: 15.5px 24px;
@@ -42,9 +42,8 @@
   transition: background-color 0.2s ease;
 
   &:is(:hover, :focus-visible, :has(+ .resetSearchButton:hover)) {
-    background-color: #ffffff;
+    background-color: colors.$background-white;
     // color: #232323;
-    color: #6f6f6f;
     outline: none;
   }
 }
@@ -68,8 +67,8 @@
   flex: 0 0 151px;
   // width: 48px;
 
-  color: #abffce;
-  background: #09bb53;
+  color: colors.$green-0;
+  background: colors.$green-500;
 
   border-radius: 0 8px 8px 0;
 
