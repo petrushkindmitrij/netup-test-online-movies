@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import classNames from 'classnames';
 
@@ -7,7 +7,11 @@ import { Header } from '@components/Header';
 import { Search } from '@components/Search';
 import { ShowList } from '@components/ShowList';
 import { ApiShowItem } from '@models/Api';
-import { fetchGetBackgrounds, fetchGetShowList, fetchSearchShowList } from '@api';
+import {
+  fetchGetBackgrounds,
+  fetchGetShowList,
+  fetchSearchShowList,
+} from '@api';
 
 import debounce from 'lodash.debounce';
 import { rotateBackground } from '@hooks/rotateBackground';
@@ -33,7 +37,8 @@ export const SearchPage = () => {
   };
   const isSearchMode = isStartedType || !!searchKeys;
 
-  const [previousBackground, currentBackground] = rotateBackground(fetchGetBackgrounds);
+  const [previousBackground, currentBackground] =
+    rotateBackground(fetchGetBackgrounds);
 
   const turnOffAnimationPlaying = () => {
     setIsAnimationPlaying(false);
@@ -53,23 +58,39 @@ export const SearchPage = () => {
     if (!backgroundImageContainerRef?.current) {
       return;
     }
-    backgroundImageContainerRef?.current?.addEventListener('animationend', turnOffAnimationPlaying);
-    return () => backgroundImageContainerRef?.current?.addEventListener('animationend', turnOffAnimationPlaying);
+    backgroundImageContainerRef?.current?.addEventListener(
+      'animationend',
+      turnOffAnimationPlaying
+    );
+    return () =>
+      backgroundImageContainerRef?.current?.addEventListener(
+        'animationend',
+        turnOffAnimationPlaying
+      );
   }, [backgroundImageContainerRef?.current]);
 
   return (
     <div className={s.searchPage}>
-      <figure ref={backgroundImageContainerRef} className={s.backgroundImageContainer}>
+      <figure
+        ref={backgroundImageContainerRef}
+        className={s.backgroundImageContainer}
+      >
         {previousBackground && (
           <img
-            className={classNames(s.backgroundImage, isAnimationPlaying && s['backgroundImage--disappear'])}
+            className={classNames(
+              s.backgroundImage,
+              isAnimationPlaying && s['backgroundImage--disappear']
+            )}
             src={previousBackground}
             alt='фон'
           />
         )}
         {currentBackground && (
           <img
-            className={classNames(s.backgroundImage, isAnimationPlaying && s['backgroundImage--appear'])}
+            className={classNames(
+              s.backgroundImage,
+              isAnimationPlaying && s['backgroundImage--appear']
+            )}
             src={currentBackground}
             alt='фон'
           />
@@ -95,8 +116,17 @@ export const SearchPage = () => {
           isShowedResetSearchButton={isSearchMode}
         />
       </section>
-      <section className={classNames(s.sectionShowList, isStartedType && s['sectionShowList--hidden'])}>
-        <ShowList showList={showList} isSearchMode={isSearchMode} isLoading={isLoading} />
+      <section
+        className={classNames(
+          s.sectionShowList,
+          isStartedType && s['sectionShowList--hidden']
+        )}
+      >
+        <ShowList
+          showList={showList}
+          isSearchMode={isSearchMode}
+          isLoading={isLoading}
+        />
       </section>
     </div>
   );

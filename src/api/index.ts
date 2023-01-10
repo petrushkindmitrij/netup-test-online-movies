@@ -1,5 +1,6 @@
 import { ApiDiscover, ApiShowItem } from '@models/Api';
 
+// FIXME: разобраться, почему ругается typescript
 // @ts-ignore
 export const getApiBaseUrl = import.meta.env.PROD ? '../../api' : 'api';
 
@@ -30,8 +31,13 @@ export const fetchSearchShowList = async (searchKeys: string) => {
     Object.values(item)
       // преобразовываем параметры айтемов в строки
       .map(itemParameters =>
-        (Array.isArray(itemParameters) ? itemParameters.join(' ') : String(itemParameters)).toLowerCase()
+        (Array.isArray(itemParameters)
+          ? itemParameters.join(' ')
+          : String(itemParameters)
+        ).toLowerCase()
       )
-      .some(itemParameters => arrayOfSearchKeys.some(searchKey => itemParameters.includes(searchKey)))
+      .some(itemParameters =>
+        arrayOfSearchKeys.some(searchKey => itemParameters.includes(searchKey))
+      )
   ) as ApiShowItem[];
 };

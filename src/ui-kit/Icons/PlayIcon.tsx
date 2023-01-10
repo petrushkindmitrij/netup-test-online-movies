@@ -1,7 +1,3 @@
-import literalSizeToNumericSize from './utils/literalSizeToNumericSize';
-
-import { ICON_SIZE } from './types';
-
 import { BaseIconProps } from './types';
 
 export const PlayIcon = ({ ...props }: BaseIconProps) => {

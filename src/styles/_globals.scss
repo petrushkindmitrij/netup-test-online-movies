@@ -30,7 +30,6 @@ footer > * {
   margin: 0 auto;
 
   @mixin setWidthAndSidePaddings($sidePadding) {
-    // max-width: 1320px + 2 * $sidePadding;
     padding: 0 $sidePadding;
   }
 
@@ -40,11 +39,6 @@ footer > * {
   @include media-queries.for-size(desktop) {
     @include setWidthAndSidePaddings(48px);
   }
-
-  /* max-width: 1320px + 2 * 48px;
-    padding: 0 48px; */
-
-  // padding-left: calc(100vw - 1320px);
 }
 
 a {

@@ -43,7 +43,6 @@
 
   &:is(:hover, :focus-visible, :has(+ .resetSearchButton:hover)) {
     background-color: colors.$background-white;
-    // color: #232323;
     outline: none;
   }
 }
@@ -65,7 +64,6 @@
   cursor: pointer;
 
   flex: 0 0 151px;
-  // width: 48px;
 
   color: colors.$green-0;
   background: colors.$green-500;
@@ -76,9 +74,4 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-
-  /* .icon {
-
-  } */
-  // }
 }

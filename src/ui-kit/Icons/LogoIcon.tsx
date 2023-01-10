@@ -1,20 +1,11 @@
-import literalSizeToNumericSize from './utils/literalSizeToNumericSize';
-
-import { ICON_SIZE } from './types';
-
 import { BaseIconProps } from './types';
 
-export const LogoIcon = ({ size = ICON_SIZE.LARGE, ...props }: BaseIconProps) => {
-  // const numericSize = literalSizeToNumericSize(size);
-
+export const LogoIcon = ({ ...props }: BaseIconProps) => {
   return (
     <svg
-      /* width={numericSize}
-      height={numericSize} */
       width='113'
       height='32'
       viewBox='0 0 113 32'
-      // viewBox='0 0 32 32'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       {...props}

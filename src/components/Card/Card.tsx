@@ -2,7 +2,6 @@ import { useCallback, useState } from 'react';
 
 import classNames from 'classnames';
 
-// import { Typography, TYPOGRAPHY_VARIANTS } from '../Typography';
 import { Tag } from '@ui-kit/Tag';
 
 import { CardProps } from './types';
@@ -32,7 +31,6 @@ export const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      // ref={containerRef}
       onMouseOver={onHover}
       onMouseOut={onOutHover}
       className={classNames(s.wrapper, className)}

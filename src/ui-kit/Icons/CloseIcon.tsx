@@ -1,15 +1,8 @@
-import literalSizeToNumericSize from './utils/literalSizeToNumericSize';
-
-import { ICON_SIZE } from './types';
-
 import { BaseIconProps } from './types';
 
-export const CloseIcon = ({ size = ICON_SIZE.MEDIUM, ...props }: BaseIconProps) => {
-
+export const CloseIcon = ({ ...props }: BaseIconProps) => {
   return (
     <svg
-      // width={numericSize}
-      // height={numericSize}
       width='18'
       height='18'
       viewBox='0 0 18 18'

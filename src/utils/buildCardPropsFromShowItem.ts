@@ -4,7 +4,6 @@ import { TagProfile, TAG_VARIANT } from '@models/TagProfile';
 import { getMinutesFromSeconds } from './time';
 
 export const buildCardPropsFromShowItemProps = ({
-  // type,
   title,
   imdb_rate,
   is_new,
@@ -17,7 +16,13 @@ export const buildCardPropsFromShowItemProps = ({
   poster,
   keyframe,
 }: ApiShowItem) => {
-  const cardDetails = [country, year, getMinutesFromSeconds(length), num_seasons + ' seasons', min_age + '+']
+  const cardDetails = [
+    country,
+    year,
+    getMinutesFromSeconds(length),
+    num_seasons + ' seasons',
+    min_age + '+',
+  ]
     .filter(Boolean)
     .map(String)
     .join(' | ');

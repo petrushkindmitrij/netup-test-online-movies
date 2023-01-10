@@ -18,7 +18,14 @@
       "length": 3240,
       "num_seasons": 5,
       "min_age": 16,
-      "genres": ["horror", "sci-fi", "fantasy", "thriller", "drama", "detective"],
+      "genres": [
+        "horror",
+        "sci-fi",
+        "fantasy",
+        "thriller",
+        "drama",
+        "detective"
+      ],
       "poster": "poster/stranger_things.jpg",
       "keyframe": "keyframe/stranger_things.jpg"
     },
@@ -44,7 +51,14 @@
       "length": 1320,
       "num_seasons": 2,
       "min_age": 12,
-      "genres": ["cartoon", "comedy", "detective", "adventure", "family", "fantasy"],
+      "genres": [
+        "cartoon",
+        "comedy",
+        "detective",
+        "adventure",
+        "family",
+        "fantasy"
+      ],
       "poster": "poster/gravity_falls.jpg",
       "keyframe": "keyframe/gravity_falls.jpg"
     },
@@ -58,7 +72,14 @@
       "length": 3240,
       "num_seasons": 5,
       "min_age": 16,
-      "genres": ["horror", "sci-fi", "fantasy", "thriller", "drama", "detective"],
+      "genres": [
+        "horror",
+        "sci-fi",
+        "fantasy",
+        "thriller",
+        "drama",
+        "detective"
+      ],
       "poster": "poster/stranger_things.jpg",
       "keyframe": "keyframe/stranger_things.jpg"
     },
@@ -84,7 +105,14 @@
       "length": 1320,
       "num_seasons": 2,
       "min_age": 12,
-      "genres": ["cartoon", "comedy", "detective", "adventure", "family", "fantasy"],
+      "genres": [
+        "cartoon",
+        "comedy",
+        "detective",
+        "adventure",
+        "family",
+        "fantasy"
+      ],
       "poster": "poster/gravity_falls.jpg",
       "keyframe": "keyframe/gravity_falls.jpg"
     },
@@ -98,7 +126,14 @@
       "length": 3240,
       "num_seasons": 5,
       "min_age": 16,
-      "genres": ["horror", "sci-fi", "fantasy", "thriller", "drama", "detective"],
+      "genres": [
+        "horror",
+        "sci-fi",
+        "fantasy",
+        "thriller",
+        "drama",
+        "detective"
+      ],
       "poster": "poster/stranger_things.jpg",
       "keyframe": "keyframe/stranger_things.jpg"
     },
@@ -124,7 +159,14 @@
       "length": 1320,
       "num_seasons": 2,
       "min_age": 12,
-      "genres": ["cartoon", "comedy", "detective", "adventure", "family", "fantasy"],
+      "genres": [
+        "cartoon",
+        "comedy",
+        "detective",
+        "adventure",
+        "family",
+        "fantasy"
+      ],
       "poster": "poster/gravity_falls.jpg",
       "keyframe": "keyframe/gravity_falls.jpg"
     }

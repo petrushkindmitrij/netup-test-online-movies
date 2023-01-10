@@ -1,4 +1,3 @@
-// import { TYPOGRAPHY_VARIANTS } from '@ui-kit';
 import { TagProfile } from '@models/TagProfile';
 
 export interface CardProps

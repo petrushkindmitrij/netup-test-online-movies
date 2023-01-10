@@ -9,9 +9,16 @@ export const createComponentClassNames =
   (variants: Record<string, string>, ...classes: Argument[]) => {
     const variantClassNames = Object.entries(variants)
       .reduce(
-        (acc, [variant, value]) => [...acc, styles[`${componentName}-${variant}-${value}`]],
-        [] as string[],
+        (acc, [variant, value]) => [
+          ...acc,
+          styles[`${componentName}-${variant}-${value}`],
+        ],
+        [] as string[]
       )
       .filter(Boolean);
-    return classNames(styles[componentName] || '', ...variantClassNames, ...classes);
+    return classNames(
+      styles[componentName] || '',
+      ...variantClassNames,
+      ...classes
+    );
   };
