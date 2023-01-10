@@ -41,8 +41,8 @@ export const Card: React.FC<CardProps> = ({
           {tags && (
             <ul className={s.tagContainer}>
               {tags.map(tag => (
-                <li id={tag.text}>
-                  <Tag key={tag.text} variant={tag.variant} className={s.tag}>
+                <li key={tag.text}>
+                  <Tag variant={tag.variant} className={s.tag}>
                     {tag.text}
                   </Tag>
                 </li>

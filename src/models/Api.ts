@@ -3,6 +3,7 @@ export interface ApiBackgroundItem {
 }
 
 export interface ApiShowItem {
+  id: string;
   type: string;
   title: string;
   imdb_rate: number;

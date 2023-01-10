@@ -26,7 +26,7 @@ export const ShowList = ({
       ) : showList.length ? (
         <ul className={s.cardList}>
           {showList.map(showItem => (
-            <li className={s.cardItem} id={showItem.title}>
+            <li className={s.cardItem} key={showItem.id}>
               <Card {...buildCardPropsFromShowItemProps(showItem)} />
             </li>
           ))}

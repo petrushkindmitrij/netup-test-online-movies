@@ -9,6 +9,7 @@
   ],
   "items": [
     {
+      "id": "0",
       "type": "tvseries",
       "title": "Stranger things",
       "imdb_rate": 9.4,
@@ -30,6 +31,7 @@
       "keyframe": "keyframe/stranger_things.jpg"
     },
     {
+      "id": "1",
       "type": "tvseries",
       "title": "The Handmaid's Tale",
       "imdb_rate": 8.1,
@@ -43,6 +45,7 @@
       "keyframe": "keyframe/handmaids_tale.jpg"
     },
     {
+      "id": "2",
       "type": "tvseries",
       "title": "Gravity Falls",
       "imdb_rate": 8.7,
@@ -63,6 +66,7 @@
       "keyframe": "keyframe/gravity_falls.jpg"
     },
     {
+      "id": "3",
       "type": "tvseries",
       "title": "Stranger things",
       "imdb_rate": 9.4,
@@ -84,6 +88,7 @@
       "keyframe": "keyframe/stranger_things.jpg"
     },
     {
+      "id": "4",
       "type": "tvseries",
       "title": "The Handmaid's Tale",
       "imdb_rate": 8.1,
@@ -97,6 +102,7 @@
       "keyframe": "keyframe/handmaids_tale.jpg"
     },
     {
+      "id": "5",
       "type": "tvseries",
       "title": "Gravity Falls",
       "imdb_rate": 8.7,
@@ -117,6 +123,7 @@
       "keyframe": "keyframe/gravity_falls.jpg"
     },
     {
+      "id": "6",
       "type": "tvseries",
       "title": "Stranger things",
       "imdb_rate": 9.4,
@@ -138,6 +145,7 @@
       "keyframe": "keyframe/stranger_things.jpg"
     },
     {
+      "id": "7",
       "type": "tvseries",
       "title": "The Handmaid's Tale",
       "imdb_rate": 8.1,
@@ -151,6 +159,7 @@
       "keyframe": "keyframe/handmaids_tale.jpg"
     },
     {
+      "id": "8",
       "type": "tvseries",
       "title": "Gravity Falls",
       "imdb_rate": 8.7,
