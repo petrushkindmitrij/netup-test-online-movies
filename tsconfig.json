@@ -39,13 +39,13 @@
       "@ui-kit": ["./src/ui-kit"],
       "@ui-kit/*": ["./src/ui-kit/*"],
       "@utils/*": ["./src/utils/*"],
-      "@utils": ["./src/utils"],
+      "@utils": ["./src/utils"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "jsx": "react-jsx"
   },
   "include": ["src"],
