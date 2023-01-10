@@ -1,4 +1,8 @@
-export type ShowItem = {
+export interface ApiBackgroundItem {
+  url: string;
+}
+
+export interface ApiShowItem {
   type: string;
   title: string;
   imdb_rate: number;
@@ -11,4 +15,9 @@ export type ShowItem = {
   genres: string[];
   poster: string;
   keyframe: string;
-};
+}
+
+export interface ApiDiscover {
+  backgrounds: ApiBackgroundItem[];
+  items: ApiShowItem[];
+}

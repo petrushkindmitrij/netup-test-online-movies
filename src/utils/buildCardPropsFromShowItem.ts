@@ -1,4 +1,5 @@
-import { ShowItem } from '@models/ShowItem';
+import { getApiBaseUrl } from '@api';
+import { ApiShowItem } from '@models/Api';
 import { TagProfile, TAG_VARIANT } from '@models/TagProfile';
 import { getMinutesFromSeconds } from './time';
 
@@ -15,14 +16,8 @@ export const buildCardPropsFromShowItemProps = ({
   genres,
   poster,
   keyframe,
-}: ShowItem) => {
-  const cardDetails = [
-    country,
-    year,
-    getMinutesFromSeconds(length),
-    num_seasons + ' seasons',
-    min_age + '+',
-  ]
+}: ApiShowItem) => {
+  const cardDetails = [country, year, getMinutesFromSeconds(length), num_seasons + ' seasons', min_age + '+']
     .filter(Boolean)
     .map(String)
     .join(' | ');
@@ -37,7 +32,7 @@ export const buildCardPropsFromShowItemProps = ({
     cardDetails: cardDetails,
     cardGenres: genres.join(', '),
     tags: tags,
-    imageLink: './src/api/' + poster,
-    changeImageLink: './src/api/' + keyframe,
+    imageLink: getApiBaseUrl + '/' + poster,
+    changeImageLink: getApiBaseUrl + '/' + '../api/' + keyframe,
   };
 };
