@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 import checker from 'vite-plugin-checker';
 import path from 'path';
 
@@ -35,5 +36,16 @@ export default defineConfig({
       '@utils/*': path.resolve('./src/utils/*'),
     },
   },
-  plugins: [react(), checker({ typescript: true })],
+  plugins: [
+    react(),
+    checker({ typescript: true }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'fonts',
+          dest: './assets',
+        },
+      ],
+    }),
+  ],
 });

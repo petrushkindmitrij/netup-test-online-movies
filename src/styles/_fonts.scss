@@ -1,2 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+// Source Sans Pro
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'),
+    url('fonts/sourcesanspro/sourcesansproextralight.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansproextralight.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansproextralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'),
+    url('fonts/sourcesanspro/sourcesansproextralightitalic.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansproextralightitalic.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansproextralightitalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+    url('fonts/sourcesanspro/sourcesansprolight.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansprolight.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansprolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'),
+    url('fonts/sourcesanspro/sourcesansprolightitalic.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansprolightitalic.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansprolightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
+    url('fonts/sourcesanspro/sourcesanspro.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesanspro.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesanspro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
+    url('fonts/sourcesanspro/sourcesansproitalic.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansproitalic.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansproitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'),
+    url('fonts/sourcesanspro/sourcesansprosemibold.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansprosemibold.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansprosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'),
+    url('fonts/sourcesanspro/sourcesansprosemibolditalic.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansprosemibolditalic.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansprosemibolditalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+    url('fonts/sourcesanspro/sourcesansprobold.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansprobold.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansprobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'),
+    url('fonts/sourcesanspro/sourcesansprobolditalic.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansprobolditalic.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansprobolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'),
+    url('fonts/sourcesanspro/sourcesansproblack.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansproblack.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansproblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'),
+    url('fonts/sourcesanspro/sourcesansproblackitalic.woff2') format('woff2'),
+    url('fonts/sourcesanspro/sourcesansproblackitalic.woff') format('woff'),
+    url('fonts/sourcesanspro/sourcesansproblackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+// Ubuntu
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url('fonts/ubuntu/ubuntulight.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntulight.woff') format('woff'), url('fonts/ubuntu/ubuntulight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'),
+    url('fonts/ubuntu/ubuntulightitalic.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntulightitalic.woff') format('woff'),
+    url('fonts/ubuntu/ubuntulightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url('fonts/ubuntu/ubuntu.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntu.woff') format('woff'), url('fonts/ubuntu/ubuntu.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('fonts/ubuntu/ubuntuitalic.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntuitalic.woff') format('woff'), url('fonts/ubuntu/ubuntuitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url('fonts/ubuntu/ubuntumedium.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntumedium.woff') format('woff'), url('fonts/ubuntu/ubuntumedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'),
+    url('fonts/ubuntu/ubuntumediumitalic.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntumediumitalic.woff') format('woff'),
+    url('fonts/ubuntu/ubuntumediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('fonts/ubuntu/ubuntubold.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntubold.woff') format('woff'), url('fonts/ubuntu/ubuntubold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'),
+    url('fonts/ubuntu/ubuntubolditalic.woff2') format('woff2'),
+    url('fonts/ubuntu/ubuntubolditalic.woff') format('woff'),
+    url('fonts/ubuntu/ubuntubolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
