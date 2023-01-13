@@ -5,7 +5,7 @@ import { ApiDiscover, ApiShowItem } from '@models/Api';
 export const getApiBaseUrl = import.meta.env.PROD ? '../../api' : 'api';
 
 export const fetchDiscover = async () => {
-  const result = await fetch(getApiBaseUrl + '/discover.json');
+  const result = await fetch(getApiBaseUrl + '/discover');
   const data = (await result.json()) as ApiDiscover;
   return data;
 };
