@@ -38,6 +38,6 @@ export const buildCardPropsFromShowItemProps = ({
     cardGenres: genres.join(', '),
     tags: tags,
     imageLink: getApiBaseUrl + '/' + poster,
-    changeImageLink: getApiBaseUrl + '/' + '../api/' + keyframe,
+    changeImageLink: getApiBaseUrl + '/' + keyframe,
   };
 };
