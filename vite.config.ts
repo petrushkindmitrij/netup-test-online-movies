@@ -45,6 +45,10 @@ export default defineConfig({
           src: 'fonts',
           dest: './assets',
         },
+        {
+          src: 'api',
+          dest: '',
+        },
       ],
     }),
   ],

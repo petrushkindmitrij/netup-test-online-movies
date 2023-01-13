@@ -1,8 +1,6 @@
 import { ApiDiscover, ApiShowItem } from '@models/Api';
 
-// FIXME: разобраться, почему ругается typescript
-// @ts-ignore
-export const getApiBaseUrl = import.meta.env.PROD ? '../../api' : 'api';
+export const getApiBaseUrl = 'api';
 
 export const fetchDiscover = async () => {
   const result = await fetch(getApiBaseUrl + '/discover');
