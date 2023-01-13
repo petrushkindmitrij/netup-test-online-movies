@@ -1,6 +1,5 @@
 $mobile-width: 429px;
 $tablet-width: 840px;
-// $desktop-width: 1024px;
 
 @mixin for-size($size) {
   @if $size == mobile {
